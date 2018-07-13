@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int totalsecs,minutes,hours,seconds;
+clrscr();
+cout<<"enter the total seconds:";
+cin>>seconds;
+totalsecs=seconds;
+hours=seconds/3600;
+ 
+seconds=seconds%3600;
+minutes=seconds/60;
+
+seconds=seconds%60;
+
+cout<<totalsecs<<"seconds="<<seconds<<"seconds="<<minutes<<"minutes-"<<hours<<"hours"<<endl;
+getch();
+}
